@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+# IVT
 
-You can use the [editor on GitHub](https://github.com/scraptechguy/scraptechguy.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+gender
+=ČÁST(A2;HLEDAT(";";A2;1)+1;50)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+den
+=KDYŽ(DEN(B2)>9;DEN(B2);CONCAT(0;DEN(B2)))
 
-### Markdown
+rok
+=ROK(B2)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+měsíc
+=KDYŽ(MĚSÍC(B2)>9;MĚSÍC(B2);CONCAT(0;MĚSÍC(B2)))
 
-```markdown
-Syntax highlighted code block
+SN
+=KDYŽ(HODNOTA(ČÁST(A2;1;HLEDAT(";";A2)-1))>1000;ČÁST(A2;1;HLEDAT(";";A2)-1);CONCAT("0";ČÁST(A2;1;HLEDAT(";";A2)-1)))
 
-# Header 1
-## Header 2
-### Header 3
+ID10
+=CONCAT(ZPRAVA(E2;2);KDYŽ(C2="female";F2+50;F2);D2;G2)
 
-- Bulleted
-- List
+ID
+=KDYŽ(MOD(H2;11)=0;CONCAT(ZPRAVA(E2;2);KDYŽ(C2="female";F2+50;F2);D2;"/";G2);"Invalid")
 
-1. Numbered
-2. List
+combine když
+=KDYŽ(C5>16;"Excellent";KDYŽ(C5>14;"Very Good";KDYŽ(C5>12;"Good";KDYŽ(C5>10;"Pass";KDYŽ(C5<=10;"Failed";" ")))))
 
-**Bold** and _Italic_ and `Code` text
+zaokrouhlení
+=KDYŽ(B3<0;MROUND(B3;-10);MROUND(B3;10))
 
-[Link](url) and ![Image](src)
-```
+check
+=KDYŽ((B3-C3)<0;B3-C3+10;KDYŽ((B3-C3)>10;B3-C3-10;"OK"))
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/scraptechguy/scraptechguy.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
