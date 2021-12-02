@@ -4,19 +4,27 @@
 
 ### gender
 
+```
 =ČÁST(A2;HLEDAT(";";A2;1)+1;50)
+```
 
 ### den
 
+```
 =KDYŽ(DEN(B2)>9;DEN(B2);CONCAT(0;DEN(B2)))
+```
 
 ### rok
 
+```
 =ROK(B2)
+```
 
 ### měsíc
 
+```
 =KDYŽ(MĚSÍC(B2)>9;MĚSÍC(B2);CONCAT(0;MĚSÍC(B2)))
+```
 
 ### Serial Number (SN)
 
