@@ -61,3 +61,9 @@
 ```
 =KDYŽ((B3-C3)<0;B3-C3+10;KDYŽ((B3-C3)>10;B3-C3-10;"OK"))
 ```
+
+### Hledat tabulku 
+
+```
+=SVYHLEDAT("89"; B6:E20; 4)
+```
