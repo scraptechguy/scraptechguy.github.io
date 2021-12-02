@@ -1,4 +1,4 @@
-# IVT
+## IVT
 
 gender
 =ČÁST(A2;HLEDAT(";";A2;1)+1;50)
