@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    padding: 2vw;
+    width: 30vw;
+}
+
+body {
+    background-color: #14171d;
+}
+
+#time {
+    position: absolute;
+    top: 6vw;
+    left: 10vw;
+    font-size: 5vw;
+    color: gray;
+    transition: all 0.3s ease;
+}
+
+#time:hover {
+    color: white;
+}
+
+#date {
+    position: absolute;
+    top: 12vw;
+    left: 19vw;
+    font-size: 2vw;
+    color: rgb(148, 147, 147);
+    transition: all 0.3s ease;
+}
+
+#date:hover {
+    color: white;
+}
+
+#UNIXtime {
+    position: absolute;
+    top: 6vw;
+    left: 60vw;
+    font-size: 5vw;
+    color: gray;
+    transition: all 0.3s ease;
+}
+
+#UNIXtime:hover {
+    color: white;
+}
+
+.UNIXtime-intro {
+    position: absolute;
+    top: 20vw;
+    left: 57vw;
+    text-align: center;
+    color: white;
+}
+
+.UNIXtimeline {
+    position: absolute;
+    top: 25vw;
+    left: 10vw;
+} 
+
+.origin {
+    position: absolute;
+    top: 40vw;
+    left: 10vw;
+    text-align: center;
+    color: white;
+}
+
+.advantages {
+    position: absolute;
+    top: 48vw;
+    left: 55vw;
+    text-align: center;
+    color: white;
+}
+
+.problem {
+    position: absolute;
+    top: 60vw;
+    left: 15vw;
+    text-align: center;
+    color: white;
+}
+
+.footer {
+    position: absolute;
+    top: 78vw;
+    left: 34vw;
+    display: inline;
+}
+
+.links > a {
+    font-size: 1vw;
+    padding: 5vw;
+    color: #74a1fb;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.links > a:hover {
+    text-decoration: underline;
+    color: #3e6cc9;
+}
+
+.webistes {
+    display: inline-block;
+    text-align: center;
+}
+
+.wiki {
+    text-align: center;
+    padding-top: 10vw;
+}
+
+#caption-wiki {
+    position: absolute;
+    top: 25vw;
+    left: 33.1vw;
+    text-decoration: none;
+    color: gray;
+    transition: all 0.3s ease;
+}
+
+#caption-wiki:hover {
+    color: white;
+}
+
+.back > a{
+    position: absolute;
+    top: 40vw;
+    left: 41vw;
+    text-decoration: none;
+    color: gray;
+    font-size: 3vw;
+    transition: all 0.3s ease;  
+}
+
+.back > a:hover {
+    color: white;
+}
