@@ -24,7 +24,7 @@ I expect some sort of Icon set question, nothing to worry about
 
 ## Graphs
 
-Graphs are located in the `Insert` section. 
+Graphs are located in the `Insert` section you nutbag. 
 
 ![image](https://user-images.githubusercontent.com/75474651/149218604-28a3801a-02d1-4b43-ae53-e2b46eeb7f7a.png)
 
@@ -138,7 +138,7 @@ Text functions are designed to make working with text easier. Here are some usef
 
 ### PivotTables
 
-A pivot table is a table of grouped values that aggregates the individual items of a more extensive table within one or more discrete categories. This summary might include sums, averages, or other statistics, which the pivot table groups together using a chosen aggregation function applied to the grouped values.
+A pivot table is a table of grouped values that aggregates the individual items of a more extensive table within one or more discrete categories. This summary might include sums, averages, or other statistics, which the pivot table groups together using a chosen aggregation function applied to the grouped values, dumbass.
 
 You can find em in the top left corner in the `Insert` section. 
 
