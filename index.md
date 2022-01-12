@@ -135,3 +135,16 @@ Text functions are designed to make working with text easier. Here are some usef
 ```
 
 ## Data handling 
+
+### PivotTables
+
+A pivot table is a table of grouped values that aggregates the individual items of a more extensive table within one or more discrete categories. This summary might include sums, averages, or other statistics, which the pivot table groups together using a chosen aggregation function applied to the grouped values.
+
+You can find em in the top left corner in the `Insert` section. 
+
+![image](https://user-images.githubusercontent.com/75474651/149223224-8fcb36a0-b82a-4c14-b71f-956f51583e88.png)
+
+When you select Create PivotTable you have to specify a range. If you want to access data in a different sheet, specify the name of that sheet before declaring the cell range.
+
+![image](https://user-images.githubusercontent.com/75474651/149223181-166d7d63-2ceb-4b2f-acfc-2147c1ae39ad.png)
+
