@@ -157,3 +157,5 @@ When you create a table a little arrows appear on the right side of the top cels
 You can also find filter option in the `Data` section... 
 
 ![image](https://user-images.githubusercontent.com/75474651/149224066-4599baf7-529f-450a-b29b-d30c3cb8ccf6.png)
+
+https://user-images.githubusercontent.com/75474651/149225091-ca3146fa-144c-4a2f-8d3a-d926ca8df5a9.mov
