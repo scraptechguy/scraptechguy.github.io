@@ -1,4 +1,4 @@
-Hey! I see you're on your way to ace the computer science test...
+# Hey! I see you're on your way to ace the computer science test...
 
 ### Table of contents 
 
@@ -50,6 +50,8 @@ You can do both of these in the popup menu after right clicking the whole chart.
 ## Relative and absolute referencing
 
 ## Ifs
+
+If is a basic logical function that does an action only <b>if</b> a certain condition is met.
 
 ## Logical functions 
 
