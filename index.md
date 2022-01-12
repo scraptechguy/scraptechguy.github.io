@@ -51,7 +51,16 @@ You can do both of these in the popup menu after right clicking the whole chart.
 
 ## Ifs
 
-If is a basic logical function that does an action only <b>if</b> a certain condition is met.
+If is a basic logical function that does an action only <b>if</b> a certain condition is met. If functions can be nested so every condition is checked. 
+
+Nesting == adding multiple ifs in a row, just like this: 
+
+![image](https://user-images.githubusercontent.com/75474651/149221696-248ba76c-f52f-4558-a177-5db968060837.png)
+
+These ifs are checking the cell number H22. There are three possible options the ifs have to go over. 1) there's a 1 in that cell, 2) there's a 2 in that cell, 
+3) there's not 1 nor 2 in that cell. The ifs first check if there's a 1 in that cell, if it is, "there's 1" is the output, if not, another if checks if there's a 2, if there is, the output is "there's 2". If this condition isn't met, the output is "there's not 1 nor 2". If we wanted to check for more numbers, "there's not 1 nor 2" would be replaced with another if. 
+
+(never used the word "if" that many times in a paragraph lol)
 
 ## Logical functions 
 
