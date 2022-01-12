@@ -2,13 +2,13 @@
 
 ### Table of contents 
 
-+ <a href="https://github.com/scraptechguy/scraptechguy.github.io/blob/main/index.md#conditional-formatting">Conditional formatting</a>
-+ <a href="https://github.com/scraptechguy/scraptechguy.github.io/blob/main/index.md#graphs">Graphs</a>
-+ <a href="https://github.com/scraptechguy/scraptechguy.github.io/blob/main/index.md#relative-and-absolute-referencing">Relative and absolute referencing</a>
-+ <a href="https://github.com/scraptechguy/scraptechguy.github.io/blob/main/index.md#ifs">Ifs</a>
-+ <a href="https://github.com/scraptechguy/scraptechguy.github.io/blob/main/index.md#logical-functions">Logical functions</a>
-+ <a href="https://github.com/scraptechguy/scraptechguy.github.io/blob/main/index.md#text-functions">Text functions</a>
-+ <a href="https://github.com/scraptechguy/scraptechguy.github.io/blob/main/index.md#data-handling">Data handling</a>
++ <a href="https://scraptechguy.github.io/#conditional-formatting">Conditional formatting</a>
++ <a href="https://scraptechguy.github.io/#graphs">Graphs</a>
++ <a href="https://scraptechguy.github.io/#relative-and-absolute-referencing">Relative and absolute referencing</a>
++ <a href="https://scraptechguy.github.io/#ifs">Ifs</a>
++ <a href="https://scraptechguy.github.io/#logical-functions">Logical functions</a>
++ <a href="https://scraptechguy.github.io/#text-functions">Text functions</a>
++ <a href="https://scraptechguy.github.io/#data-handling">Data handling</a>
 
 ## Conditional formatting
 
