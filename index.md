@@ -2,13 +2,13 @@ Hey! I see you're on your way to ace the computer science test...
 
 ### Table of contents 
 
-+ <a href="">Conditional formatting</a>
-+ <a href="">Graphs</a>
-+ <a href="">Relative and absolute referencing</a>
-+ <a href="">Ifs</a>
-+ <a href="">Logical functions</a>
-+ <a href="">Text functions</a>
-+ <a href="">Data handling</a>
++ <a href="https://github.com/scraptechguy/scraptechguy.github.io/blob/main/index.md#conditional-formatting">Conditional formatting</a>
++ <a href="https://github.com/scraptechguy/scraptechguy.github.io/blob/main/index.md#graphs">Graphs</a>
++ <a href="https://github.com/scraptechguy/scraptechguy.github.io/blob/main/index.md#relative-and-absolute-referencing">Relative and absolute referencing</a>
++ <a href="https://github.com/scraptechguy/scraptechguy.github.io/blob/main/index.md#ifs">Ifs</a>
++ <a href="https://github.com/scraptechguy/scraptechguy.github.io/blob/main/index.md#logical-functions">Logical functions</a>
++ <a href="https://github.com/scraptechguy/scraptechguy.github.io/blob/main/index.md#text-functions">Text functions</a>
++ <a href="https://github.com/scraptechguy/scraptechguy.github.io/blob/main/index.md#data-handling">Data handling</a>
 
 ## Conditional formatting
 
