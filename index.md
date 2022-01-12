@@ -148,3 +148,12 @@ When you select Create PivotTable you have to specify a range. If you want to ac
 
 ![image](https://user-images.githubusercontent.com/75474651/149223181-166d7d63-2ceb-4b2f-acfc-2147c1ae39ad.png)
 
+### Filters
+
+When you create a table a little arrows appear on the right side of the top celss, when you click em you can filter or sort things based on whatever you want! 
+
+![image](https://user-images.githubusercontent.com/75474651/149223967-ede3100b-4e36-4442-9bf1-96ed995f7f5a.png)
+
+You can also find filter option in the `Data` section... 
+
+![image](https://user-images.githubusercontent.com/75474651/149224066-4599baf7-529f-450a-b29b-d30c3cb8ccf6.png)
