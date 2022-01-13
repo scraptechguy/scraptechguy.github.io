@@ -49,6 +49,8 @@ You can do both of these in the popup menu after right clicking the whole chart.
 
 ## Relative and absolute referencing
 
+Adding `$` before a column letter or row number locks it
+
 ## Ifs
 
 If is a basic logical function that does an action only <b>if</b> a certain condition is met. If functions can be nested so every condition is checked. 
