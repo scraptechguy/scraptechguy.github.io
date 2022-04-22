@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>UNIX Time</title>
+
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="shortcut icon" type="image/jpg" href="rickroll.jpg"/>
+    </head>
+
+    <body>
+         <div class="time">
+            <span id="date"></span>
+            <br>
+            <span id="time"></span>
+        </div>
+
+        <div class="UNIXtime">
+            <span id="UNIXtime"></span>
+        </div>
+
+
+        <div class="UNIXtime-intro">
+            <h2>UNIX Time</h2>
+
+            <p id="UNIXtime-intro">
+                UNIX time is a system for describing a point in time. 
+                It is the number of seconds that have elapsed since
+                the UNIX epoch, excluding leap seconds. 
+                The UNIX epoch is 00:00:00 UTC on January 1970. 
+                Unix time is nonlinear with a leap second having 
+                the same Unix time as the second before it 
+                (or after it, implementation dependent), so that every 
+                day is treated as if it contains exactly 86400 seconds,
+                with no seconds added to or subtracted from the day 
+                as a result of positive or negative leap seconds. 
+                Due to this treatment of leap seconds, UNIX time is 
+                NOT a true representation of UTC.
+            </p>
+        </div>
+
+        <div class="UNIXtimeline">
+            <img src="UNIXtimeline.png" width="500px" alt="UNIX time timeline">
+        </div>
+
+        <div class="origin">
+            <h2>Where did it come from?</h2>
+            
+            <p id="origin">
+                The earliest versions of Unix time had a 32-bit
+                integer incrementing at a rate of 60 Hz, which 
+                was the rate of the system clock on the hardware 
+                of the early Unix systems. The value 60 Hz still 
+                appears in some software interfaces as a result. 
+                The epoch also differed from the current value. 
+                The first edition Unix Programmer's Manual dated
+                3 November 1971 defines the Unix time as "the 
+                time since 00:00:00, 1 January 1971, measured in
+                sixtieths of a second".
+            </p>
+        </div>
+
+        <div class="advantages">
+            <h2>Why is it cooler than normal time?</h2>
+
+            <p id="advantages">
+                It has "UNIX" in it's name so it sounds cool. 
+                Now seriously. One of the primary benefits of 
+                using UNIX time is that it can be represented 
+                as an integer making it easier to parse and 
+                use across different systems.
+            </p>
+        </div>
+
+        <div class="problem">
+            <h2>Year 2038 Problem</h2>
+
+            <p id="problem">
+                UNIX time is stored as a signed 32-bit integer. 
+                Such implementations cannot encode times after 
+                03:14:07 UTC on 19 January 2038 (UNIX time value
+                is showed on the timeline).
+                Similar to the 
+                <a href="https://en.wikipedia.org/wiki/Year_2000_problem">Y2K problem</a> 
+                , the Year 2038 problem is caused by 
+                an insufficient number of bits (digits) chosen 
+                to represent time.
+            </p>
+        </div>
+
+        <div class="footer">
+            <div class="links" id="links">
+                <a href="https://github.com/scraptechguy/scraptechguy.github.io" target="_blank">Source Code</a>
+
+                <a href="websitesIRobbed.html">Websites I robbed</a>
+            </div>
+        </div>
+        <script src="app.js" charset="utf-8"></script>
+    </body>
+</html>
