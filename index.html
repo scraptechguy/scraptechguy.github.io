@@ -1,103 +1,89 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your personal website description">
+    <title>Your Name</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Your Name</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<html>
-    <head>
-        <meta charset="utf-8">
-
-        <title>UNIX Time</title>
-
-        <link rel="stylesheet" href="styles.css">
-
-        <link rel="shortcut icon" type="image/jpg" href="rickroll.jpg"/>
-    </head>
-
-    <body>
-         <div class="time">
-            <span id="date"></span>
-            <br>
-            <span id="time"></span>
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Personal Website</h2>
+            <p>Your journey in the digital world starts here.</p>
         </div>
+    </section>
 
-        <div class="UNIXtime">
-            <span id="UNIXtime"></span>
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>Hello! I'm Your Name, a passionate developer with a love for creating meaningful digital experiences. I specialize in web development, UI/UX design, and problem-solving through code. This website showcases some of my projects and accomplishments.</p>
         </div>
+    </section>
 
-
-        <div class="UNIXtime-intro">
-            <h2>UNIX Time</h2>
-
-            <p id="UNIXtime-intro">
-                UNIX time is a system for describing a point in time. 
-                It is the number of seconds that have elapsed since
-                the UNIX epoch, excluding leap seconds. 
-                The UNIX epoch is 00:00:00 UTC on January 1970. 
-                Unix time is nonlinear with a leap second having 
-                the same Unix time as the second before it 
-                (or after it, implementation dependent), so that every 
-                day is treated as if it contains exactly 86400 seconds,
-                with no seconds added to or subtracted from the day 
-                as a result of positive or negative leap seconds. 
-                Due to this treatment of leap seconds, UNIX time is 
-                NOT a true representation of UTC.
-            </p>
-        </div>
-
-        <div class="UNIXtimeline">
-            <img src="UNIXtimeline.png" width="500px" alt="UNIX time timeline">
-        </div>
-
-        <div class="origin">
-            <h2>Where did it come from?</h2>
-            
-            <p id="origin">
-                The earliest versions of Unix time had a 32-bit
-                integer incrementing at a rate of 60 Hz, which 
-                was the rate of the system clock on the hardware 
-                of the early Unix systems. The value 60 Hz still 
-                appears in some software interfaces as a result. 
-                The epoch also differed from the current value. 
-                The first edition Unix Programmer's Manual dated
-                3 November 1971 defines the Unix time as "the 
-                time since 00:00:00, 1 January 1971, measured in
-                sixtieths of a second".
-            </p>
-        </div>
-
-        <div class="advantages">
-            <h2>Why is it cooler than normal time?</h2>
-
-            <p id="advantages">
-                It has "UNIX" in it's name so it sounds cool. 
-                Now seriously. One of the primary benefits of 
-                using UNIX time is that it can be represented 
-                as an integer making it easier to parse and 
-                use across different systems.
-            </p>
-        </div>
-
-        <div class="problem">
-            <h2>Year 2038 Problem</h2>
-
-            <p id="problem">
-                UNIX time is stored as a signed 32-bit integer. 
-                Such implementations cannot encode times after 
-                03:14:07 UTC on 19 January 2038 (UNIX time value
-                is showed on the timeline).
-                Similar to the 
-                <a href="https://en.wikipedia.org/wiki/Year_2000_problem">Y2K problem</a> 
-                , the Year 2038 problem is caused by 
-                an insufficient number of bits (digits) chosen 
-                to represent time.
-            </p>
-        </div>
-
-        <div class="footer">
-            <div class="links" id="links">
-                <a href="https://github.com/scraptechguy/scraptechguy.github.io" target="_blank">Source Code</a>
-
-                <a href="websitesIRobbed.html">Websites I robbed</a>
+    <section id="projects">
+        <div class="section-content">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project One</h3>
+                    <p>A brief description of the project goes here. What problem does it solve? What tech was used?</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project Two</h3>
+                    <p>Another brief description of a different project. Highlight your key achievements.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project Three</h3>
+                    <p>Describe your third project and the impact it had. Mention the tools or frameworks you used.</p>
+                </div>
             </div>
         </div>
-        <script src="app.js" charset="utf-8"></script>
-    </body>
+    </section>
+
+    <section id="contact">
+        <div class="section-content">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to reach out through the form below or connect with me on social media.</p>
+            <form>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Your Name. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
 </html>
