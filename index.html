@@ -3,87 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your personal website description">
-    <title>Your Name</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Personal Website</title>
+    <style>
+        /* Reset and basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            background-color: #121212;
+            color: #f5f5f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #1c1c1e;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            border-bottom: 2px solid transparent;
+            background-clip: padding-box;
+        }
+
+        header::after {
+            content: "";
+            display: block;
+            height: 2px;
+            background: linear-gradient(90deg, #ff5722, #0071e3);
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #f5f5f7;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #61dafb;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 5rem 2rem;
+            background: linear-gradient(180deg, #1c1c1e, #121212);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero .cta {
+            display: inline-block;
+            background-color: #0071e3;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero .cta:hover {
+            background-color: #005bb5;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 3rem 2rem;
+            gap: 2rem;
+        }
+
+        .feature {
+            background-color: #1c1c1e;
+            padding: 2rem;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border-top: 4px solid #ff5722;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            border-color: #ff9800;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #ff9800;
+        }
+
+        .feature p {
+            font-size: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #1c1c1e;
+            color: #a1a1a6;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #61dafb;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <div class="logo">MyWebsite</div>
         <nav>
-            <div class="logo">
-                <h1>Your Name</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h2>Welcome to My Personal Website</h2>
-            <p>Your journey in the digital world starts here.</p>
-        </div>
+    <section class="hero">
+        <h1>Welcome to My Personal Website</h1>
+        <p>Crafting beautiful digital experiences.</p>
+        <a href="#contact" class="cta">Get in Touch</a>
     </section>
 
-    <section id="about">
-        <div class="section-content">
-            <h2>About Me</h2>
-            <p>Hello! I'm Your Name, a passionate developer with a love for creating meaningful digital experiences. I specialize in web development, UI/UX design, and problem-solving through code. This website showcases some of my projects and accomplishments.</p>
+    <section class="features">
+        <div class="feature">
+            <h3>Feature One</h3>
+            <p>Discover the incredible features of this website.</p>
         </div>
-    </section>
-
-    <section id="projects">
-        <div class="section-content">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Project One</h3>
-                    <p>A brief description of the project goes here. What problem does it solve? What tech was used?</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project Two</h3>
-                    <p>Another brief description of a different project. Highlight your key achievements.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project Three</h3>
-                    <p>Describe your third project and the impact it had. Mention the tools or frameworks you used.</p>
-                </div>
-            </div>
+        <div class="feature">
+            <h3>Feature Two</h3>
+            <p>Explore the services and opportunities offered.</p>
         </div>
-    </section>
-
-    <section id="contact">
-        <div class="section-content">
-            <h2>Contact Me</h2>
-            <p>If you'd like to get in touch, feel free to reach out through the form below or connect with me on social media.</p>
-            <form>
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
+        <div class="feature">
+            <h3>Feature Three</h3>
+            <p>Join a growing community of like-minded individuals.</p>
         </div>
     </section>
 
     <footer>
-        <div class="footer-content">
-            <p>© 2025 Your Name. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
-        </div>
+        <p>&copy; 2025 MyWebsite. Built with ❤️. <a href="#">Privacy Policy</a></p>
     </footer>
 </body>
 </html>
