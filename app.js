@@ -1,50 +1,30 @@
-function getTime() {
-    let date = new Date(); 
-    let hh = date.getHours();
-    let mm = date.getMinutes();
-    let ss = date.getSeconds();
-    let session = "AM";
-  
-    if (hh == 0) {
-        hh = 12;
-    }
+// JavaScript to add the "visible" class when elements come into view
+document.addEventListener("DOMContentLoaded", function () {
+    // Select all elements with the class "scroll-animate"
+    const elementsToAnimate = document.querySelectorAll(".scroll-animate");
 
-    if (hh > 12) {
-        hh = hh - 12;
-        session = "PM";
-    }
-  
-    hh = (hh < 10) ? "0" + hh : hh;
-    mm = (mm < 10) ? "0" + mm : mm;
-    ss = (ss < 10) ? "0" + ss : ss;
-      
-    let currentTime = hh + ":" + mm + ":" + ss + " " + session;
-    document.getElementById("time").innerText = currentTime; 
-}
+    // Define the options for the Intersection Observer
+    const observerOptions = {
+        root: null,               // Observe from the viewport
+        rootMargin: "0px",        // No margin around the root
+        threshold: 0.1,           // Trigger when 10% of the element is in view
+    };
 
-function getDate() {
-    let date = new Date(); 
-    let yy = date.getFullYear();
-    let mm = date.getMonth();
-    let dd = date.getDate();
+    // Create the Intersection Observer instance
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            // If the element is in the viewport (i.e., intersecting)
+            if (entry.isIntersecting) {
+                // Add the "visible" class to trigger the animation
+                entry.target.classList.add("visible");
+                // Stop observing this element once it is visible
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
 
-    let currentDate = dd + "/" + (mm + 1) + "/" + yy;
-    document.getElementById("date").innerHTML = currentDate;
-}
-
-function getUNIXtime() {
-    let date = new Date(); 
-
-    var timestamp = Math.round(date.getTime() / 1000)
-    document.getElementById("UNIXtime").innerHTML = timestamp;
-}
-
-function main() {
-    getTime();
-    getDate();
-    getUNIXtime();
-
-    let t = setTimeout(function(){ main() }, 1000);
-}
-
-main();
+    // Observe each element with the "scroll-animate" class
+    elementsToAnimate.forEach(element => {
+        observer.observe(element);
+    });
+});
